@@ -1,0 +1,11 @@
+<div class="w-75 bg-main-light m-auto">
+    <div class="row" *ngFor="let product of productList.shippingAddress?.cartItems?.product">
+        <div class="col-md-2">
+            <img src={{product.category.image}} class="w-100" alt="">
+        </div>
+        <div class="col-md-10">
+            <h3>{{product.title}}</h3>
+            <h3>{{product.category.name}}</h3>
+        </div>
+        </div>
+</div>
